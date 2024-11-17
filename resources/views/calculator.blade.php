@@ -29,11 +29,12 @@
                         <a class="nav-link" href="{{ route('support') }}" style="color: white">Support</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: yellow; font-weight:bold">
                             Tools
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbar Dropdown MenuLink">
-                            <li><a class="dropdown-item" href="{{ route('calculator') }}">Calculator</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="navbar Dropdown MenuLink" style="background-color: #4CAF50">
+                            <li><a class="dropdown-item" href="{{ route('calculator') }}" style="color: yellow; font-weight:bold" onmouseover="this.style.backgroundColor='#EB8E27'" 
+                            onmouseout="this.style.backgroundColor='transparent'">Calculator</a></li>
                         </ul>
                     </li>
                 </ul>
