@@ -12,13 +12,23 @@
         *{
             font-family: Roboto Slab;
         }
+
+        .alert{
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-primary{
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg" style="background-color:#113826">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('home') }}" style="color: white;">GIZIES</a>
+            <a class="navbar-brand" href="{{ route('home') }}" style="color: white;"></a>
             <a class="navbar-brand" href="{{ route('home') }}" style="color: white;"> <img src="{{URL('image/logo.png')}}" alt="" style="max-width: 120px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,9 +44,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('program') }}" style="color: white;">Programs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('support') }}" style="color: white;">Support</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                             Tools

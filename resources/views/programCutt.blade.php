@@ -231,24 +231,26 @@
             filter: blur(3px);
         }
 
-        .food-trains-content{
+        .tips-content{
+
             display: flex;
             justify-content: center;
             flex-direction: column;
-
+            
             align-items: center;
-
+            
             /* background-color: rgb(255, 239, 208); */
             /* background-color:rgba(2, 128, 69, 0.36); */
         }
-
-        .body-food-trains{
+        
+        .body-tips{
             display: flex;
             justify-content: center;
             flex-direction: row;
-
+            
             align-items: center;
-
+            
+            font-size: 1vw;
             text-align: center;
         }
 
@@ -263,12 +265,18 @@
             
         }
 
-        /* .accordion-header button{
-            background-color: rgba(0, 70, 37, 0.75);
-        } */
+        .accordion-header button{
+            /* background-color: rgba(0, 70, 37, 0.75); */
+            font-size: 1.2vw;
+        }
 
         .accordion-body{
             text-align: left;
+        }
+
+        .end-content{
+            display: flex;
+            justify-content: center;
         }
         
     </style>
@@ -292,9 +300,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('program') }}" style="color: white;">Programs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('support') }}" style="color: white;">Support</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                             Tools
@@ -323,7 +329,7 @@
         <div class="left-content">
             <!-- <img src="{{URL('image\image1.jpg')}}" alt="" class="image-content"> -->
 
-            <iframe class="image-content" width="560" height="315" src="https://www.youtube.com/embed/PiHAGXbLVno?si=biC9rYsFR5MahdKJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>s
+            <iframe class="image-content"width="560" height="315" src="https://www.youtube.com/embed/be_TjNbJ75g?si=ZkiSGX8v5_uQsIrt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <div class="gap"></div>
@@ -341,15 +347,15 @@
     <div class="content-container">
         <div class="left-content">
             <div class="text">
-                <h1>Bulking Program</h1>
-                <p> Bulking program is a great program for beginners. It is a 4-week program that will help you get started on your fitness journey. The program includes a mix of cardio and strength training exercises that will help you build muscle and burn fat. The program is designed to be challenging but achievable, so you can see results without feeling overwhelmed. </p>
+                <h1>Why we must cutting?</h1>
+                <p> Cutting is important because it helps reduce body fat while maintaining the muscle mass gained during a bulking phase, leading to a leaner, more defined physique. The main goal of cutting is to create a calorie deficit, allowing the body to burn stored fat for energy while preserving muscle. This phase improves muscle definition and overall aesthetics, making muscles more visible and giving you a more athletic appearance. Cutting also enhances metabolic health by lowering excess fat, which can reduce the risk of heart disease, improve insulin sensitivity, and boost overall energy levels. Additionally, cutting helps improve physical performance and endurance by shedding excess weight, making movements more efficient. It’s the phase that refines the hard-earned muscle gains from bulking, providing a balanced, lean, and healthier body.s</p>
             </div>
         </div>
         
         <div class="gap"></div>
         
         <div class="right-content">
-            <img src="{{URL('image\image1.jpg')}}" alt="" class="image-content">
+            <img src="{{URL('image\Image-content.jpg')}}" alt="" class="image-content">
         </div>
     </div>
 
@@ -364,33 +370,33 @@
         
         <div class="card-carousel">
             <div class="card" style="width: 18rem;">
-                <img src="{{URL('image\image1.jpg')}}" alt="" class="card-content">
+                <img src="{{URL('image\Menu1.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">537 Calories</h5>
+                    <h5 style="" class="">395 Calories</h5>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="{{URL('image\image1.jpg')}}" alt="" class="card-content">
+                <img src="{{URL('image\Menu2.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">537 Calories</h5>
+                    <h5 style="" class="">374 Calories</h5>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="{{URL('image\image1.jpg')}}" alt="" class="card-content">
+                <img src="{{URL('image\Menu3.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">537 Calories</h5>
+                    <h5 style="" class="">207 Calories</h5>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="{{URL('image\image1.jpg')}}" alt="" class="card-content">
+                <img src="{{URL('image\Menu4.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">537 Calories</h5>
+                    <h5 style="" class="">403 Calories</h5>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="{{URL('image\image1.jpg')}}" alt="" class="card-content">
+                <img src="{{URL('image\Menu5.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">537 Calories</h5>
+                    <h5 style="" class="">500-700 kcal</h5>
                 </div>
             </div>
         </div>
@@ -400,15 +406,15 @@
     
     <div class="hl"></div>
     
-    <div class="food-trains-content">
+    <div class="tips-content">
         
         <div class="head-content">
             <h1>Tips and Trick about Bulking</h1>
         </div>
         
-        <!-- <div class="hl-divider" style="margin 200px"></div> Divider -->
+        <div class="hl-divider" style="margin 200px"></div> 
         
-        <div class="body-food-trains">
+        <div class="body-tips">
             <div class="accordion" id="accordionExample">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
@@ -530,16 +536,39 @@
             </div>
         </div>
     </div>
-.</div>
+</div>
     
     <div class="hl" style="margin: 0px"></div> <!-- Divider -->
 
+    
+    <!-- <section class="mb-5">
+        <h2 class="h3 text-center">Why GIZIES is Unique</h2>
+        <p class="text-center">At GIZIES, we stand apart by combining cutting-edge nutritional science with personalized, practical solutions for every lifestyle. Our holistic approach to health and wellness, backed by expert advice and premium products, ensures that you are always supported in your journey to a healthier life.</p>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <i class="bi bi-person-check" style="font-size: 50px; color: #4CAF50;"></i>
+                <h5>Expert-Led Advice</h5>
+                <p>Our team of nutritionists and fitness experts provide personalized, science-backed recommendations.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="bi bi-box-seam" style="font-size: 50px; color: #4CAF50;"></i>
+                <h5>High-Quality Products</h5>
+                <p>We only offer top-tier, carefully selected supplements and products to enhance your health.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="bi bi-egg-fried" style="font-size: 50px; color: #4CAF50;"></i>
+                <h5>Tailored Meal Plans</h5>
+                <p>Receive customized meal plans that fit your specific health goals, preferences, and lifestyle.</p>
+            </div>
+        </div>
+    </section> -->
+    
     <div class="end-content">
         <div class="end-header">
-            
+            <h1>Ready to Start Your Bulking Program?</h1>
         </div>
     </div>
-
+    
     <footer class="bg-light text-center text-md-start py-4">
         <div class="container">
             <div class="row">

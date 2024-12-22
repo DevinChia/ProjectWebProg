@@ -34,9 +34,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('program') }}" style="color: white;">Programs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('support') }}" style="color: white;">Support</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                             Tools
@@ -117,7 +115,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Diet Programs</h5>
                     <p class="card-text">Explore our diet programs designed for a variety of health goals.</p>
-                    <a href="{{ route('support') }}" class="btn me-2" style="background-color: #ed553b; color: white;">Explore Now</a>
+                    <a href="{{ route('program') }}" class="btn me-2" style="background-color: #ed553b; color: white;">Explore Now</a>
                 </div>
             </div>
         </div>

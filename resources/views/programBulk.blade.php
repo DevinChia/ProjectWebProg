@@ -231,7 +231,7 @@
             filter: blur(3px);
         }
 
-        .food-trains-content{
+        .tips-content{
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -242,30 +242,32 @@
             /* background-color:rgba(2, 128, 69, 0.36); */
         }
 
-        .body-food-trains{
+        .body-tips{
             display: flex;
             justify-content: center;
             flex-direction: row;
 
             align-items: center;
 
+            font-size: 1vw;
             text-align: center;
         }
-
+        
         .accordion{
-
+            
             margin: 30px;
             width: 80vh;
-
+            
             --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(0, 122, 51, 0.25);
             --bs-accordion-active-bg: white;
-
+            
             
         }
-
-        /* .accordion-header button{
-            background-color: rgba(0, 70, 37, 0.75);
-        } */
+        
+        .accordion-header button{
+            font-size: 1.2vw;
+            /* background-color: rgba(0, 70, 37, 0.75); */
+        }
 
         .accordion-body{
             text-align: left;
@@ -292,9 +294,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('program') }}" style="color: white;">Programs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('support') }}" style="color: white;">Support</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                             Tools
@@ -317,7 +316,7 @@
         </div>
     </div>
 
-    <!-- <div class="hl-right"></div> -->
+    <div class="hl-right"></div>
 
     <div class="content-container">
         <div class="left-content">
@@ -341,15 +340,16 @@
     <div class="content-container">
         <div class="left-content">
             <div class="text">
-                <h1>Bulking Program</h1>
-                <p> Bulking program is a great program for beginners. It is a 4-week program that will help you get started on your fitness journey. The program includes a mix of cardio and strength training exercises that will help you build muscle and burn fat. The program is designed to be challenging but achievable, so you can see results without feeling overwhelmed. </p>
+                <h1>Why we need to bulk? </h1>
+                <p> 
+                Bulking is essential for individuals who are too skinny because it helps increase muscle mass, strength, and overall body size, leading to a healthier physique and improved performance. It promotes a calorie surplus, providing the necessary energy and nutrients to build lean muscle, strengthen bones, and boost metabolism, which in turn improves energy levels and supports immune function. Bulking also helps balance hormones, enhances physical appearance by creating a more toned and proportionate body, and prevents muscle wasting, injury, and nutrient deficiencies. Additionally, it has mental health benefits, such as boosting confidence and reducing anxiety, and sets the foundation for future fitness goals like cutting or leaning out. </p>
             </div>
         </div>
         
         <div class="gap"></div>
         
         <div class="right-content">
-            <img src="{{URL('image\image1.jpg')}}" alt="" class="image-content">
+            <img src="{{URL('image\Image-content.jpg')}}" alt="" class="image-content">
         </div>
     </div>
 
@@ -357,40 +357,40 @@
     
     <div class="mid-content">
         <div class="head-content">
-            <h1>Recomendation Food from our Personal Trainer</h1>
+            <h1>Recommendation Food from our Personal Trainer</h1>
         </div>
 
         <div class="hl-divider" ></div> <!-- Divider -->
         
         <div class="card-carousel">
             <div class="card" style="width: 18rem;">
-                <img src="{{URL('image\image1.jpg')}}" alt="" class="card-content">
+                <img src="{{URL('image\Menu1.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">537 Calories</h5>
+                    <h5 style="" class="">395 Calories</h5>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="{{URL('image\image1.jpg')}}" alt="" class="card-content">
+                <img src="{{URL('image\Menu2.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">537 Calories</h5>
+                    <h5 style="" class="">374 Calories</h5>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="{{URL('image\image1.jpg')}}" alt="" class="card-content">
+                <img src="{{URL('image\Menu3.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">537 Calories</h5>
+                    <h5 style="" class="">207 Calories</h5>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="{{URL('image\image1.jpg')}}" alt="" class="card-content">
+                <img src="{{URL('image\Menu4.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">537 Calories</h5>
+                    <h5 style="" class="">403 Calories</h5>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="{{URL('image\image1.jpg')}}" alt="" class="card-content">
+                <img src="{{URL('image\Menu5.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">537 Calories</h5>
+                    <h5 style="" class="">500-700 kcal</h5>
                 </div>
             </div>
         </div>
@@ -400,7 +400,7 @@
     
     <div class="hl"></div>
     
-    <div class="food-trains-content">
+    <div class="tips-content">
         
         <div class="head-content">
             <h1>Tips and Trick about Bulking</h1>
@@ -408,7 +408,7 @@
         
         <!-- <div class="hl-divider" style="margin 200px"></div> Divider -->
         
-        <div class="body-food-trains">
+        <div class="body-tips">
             <div class="accordion" id="accordionExample">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
@@ -535,8 +535,8 @@
     <div class="hl" style="margin: 0px"></div> <!-- Divider -->
 
     <div class="end-content">
-        <div class="end-header">
-            
+        <div class="head-content">
+            <h1>Ready to Start Your Bulking Program?</h1>
         </div>
     </div>
 

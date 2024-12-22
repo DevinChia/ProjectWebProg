@@ -177,9 +177,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('program') }}" style="color: white;">Programs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('support') }}" style="color: white;">Support</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                             Tools
