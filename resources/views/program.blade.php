@@ -11,8 +11,99 @@
     <style>
         *{
             font-family: Roboto Slab;
+            margin: 0; 
+            padding: 0;
         }
 
+        body{
+            background: linear-gradient(#113826 5%,#A1A5A6 90%);
+        }
+
+        .gap{
+            margin: 30px
+        }
+
+        .container-body{
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .header-container{
+            position: relative;
+        }
+
+        .image-header{
+            margin-top: 20px;
+            
+            opacity: 1;
+
+            display: block;
+            justify-content: center;
+            width:80%;
+            max-height: 500px;
+            margin-left: 10%;
+            transition: .5s ease;
+            
+            /* backface-visibility: hidden; */
+
+            border-radius:10%
+        }
+
+        .text-header{
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .header-container:hover .image-header{
+            opacity: 0.3;
+            filter: blur(3px);
+        }
+
+        .header-container:hover .text-header{
+            opacity: 1;
+        }
+
+        .DietText {
+            /* background-color: #04AA6D; */
+            color: white;
+            font-size: 100%;
+            padding: 16px 32px;
+        }
+
+        .card{
+            border: none;
+        }
+
+        .hl{ /* horizontal Line */
+            border-top: 1px solid gray;
+            opacity: 30%;
+            height: 20px;
+        }
+
+        .btn-primary{
+            --bs-btn-bg: #198754;
+            --bs-btn-border-color: #198754;
+            --bs-btn-hover-border-color: #198754;
+            --bs-btn-hover-bg: white;
+        }
+
+        .btn:hover{
+            color:#198754;
+        }
+
+        .sign-list{
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +142,70 @@
             </div>
         </div>
     </nav>
+
+    <div class="header-container">
+        <img src="{{URL('image/Skinny&Fat.png')}}" alt="" class= "image-header">
+        <div class="text-header">
+            <h1 style="" class="DietText">Diet Program</h1>
+        </div>
+    </div>
+    
+
+    <div class="container-body">
+        <div class="card text-center">
+            <div class="card-header" style="background-color:rgb(25, 87, 58); color: white;">
+                Bulking
+            </div>
+            <div class="card-body" style=" max-width: 600px;">
+                <h5 class="card-title">What is Bulking?</h5>
+                <p class="card-text"> 
+                Bulking is when you eat more calories than you burn to gain muscle mass, often leading to some fat gain. It focuses on intense weight training and a high-calorie, protein-rich diet.</p>
+                
+                <div class="hl"></div>
+                
+                <h5 class="card-title">5 Sign u need to start Bulking </h5>
+                <ul class="sign-list">
+                    <li> You are underweight or have a low body fat percentage</li>
+                    <li> You are struggling to gain muscle mass</li>
+                    <li> You want to increase strength but aren’t making progress.</li>
+                    <li> You have a fast metabolism that makes gaining weight difficult.</li>
+                    <li> You have bodybuilding or muscle-building goals.</li>
+                </ul>
+                
+                <div class="hl"></div>
+                
+                <a href="{{ route('programBulk') }}" class="btn btn-primary">Begin your Journey</a>
+            </div>
+        </div>
+
+        <div class="gap"></div>
+
+        <div class="card text-center">
+            <div class="card-header" style="background-color:rgb(25, 87, 58); color: white;">
+                Cutting
+            </div>
+            <div class="card-body" style=" max-width: 600px;">
+                <h5 class="card-title">What Is Cutting? </h5>
+                <p class="card-text">Cutting is when you reduce calorie intake to lose body fat while preserving muscle. This phase typically includes strength training, a high-protein diet, and more cardio to achieve a leaner physique.</p>
+                
+                <div class="hl"></div>
+                
+                <h5 class="card-title">5 Sign u need to start Cutting </h5>
+                <ul class="sign-list">
+                    <li>You are carrying excess body fat</li>
+                    <li>You want to improve muscle definition</li>
+                    <li>Your current weight or body composition is affecting your health</li>
+                    <li>You want to enhance athletic performance</li>
+                    <li>You’re preparing for a competition or event</li>
+                </ul>
+                
+                <div class="hl"></div>
+
+                <a href="{{ route('programCutt') }}" class="btn btn-primary">Begin your Journey</a>
+            </div>
+        </div>
+    </div>
+
     <footer class="bg-light text-center text-md-start py-4">
         <div class="container">
             <div class="row">
