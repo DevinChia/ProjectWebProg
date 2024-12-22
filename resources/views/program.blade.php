@@ -104,6 +104,58 @@
         .sign-list{
             text-align: left;
         }
+
+        .card{
+            position: relative;
+            left: 0px;
+        }
+
+        .card-carousel{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card:not(:first-child){
+            margin-left:-50px;
+        }
+
+        .card:hover{
+            transform: translateY(-20px);
+            transition-duration: 0.5s;
+        }
+
+        .card:hover ~ .card{
+            /* left: 20px; */
+            transition-duration: 0.5s;
+            
+
+        }
+
+        .text-card{
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .card:hover .text-card{
+            opacity: 1;
+        }
+
+        .card:hover .card-content{
+            transition-duration: 0.5s;
+            opacity: 0.5;
+            filter: blur(3px);
+            transition-timing-function: ease-out;
+        }
     </style>
 </head>
 <body>
