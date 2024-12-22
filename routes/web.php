@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CalculatorController;
 
 Route::get('/', function () {
     return view('home');
@@ -26,6 +27,5 @@ Route::get('/support', function () {
     return view('support');
 })->name('support');
 
-Route::get('/calculator', function () {
-    return view('calculator');
-})->name('calculator');
+Route::get('/calculator', [CalculatorController::class, 'index'])->name('calculator');
+Route::post('/calculator/calculate', [CalculatorController::class, 'calculate'])->name('calculate');

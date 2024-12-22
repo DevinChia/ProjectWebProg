@@ -51,6 +51,44 @@
             </div>
         </div>
     </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Kalkulator Kalori dan BMI</h1>
+        <form action="{{ route('calculate') }}" method="POST">
+            @csrf
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="age" class="form-label">Umur</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+            <div class="mb-3">
+                <label for="weight" class="form-label">Berat Badan (kg)</label>
+                <input type="number" class="form-control" id="weight" name="weight" step="0.1" required>
+            </div>
+            <div class="mb-3">
+                <label for="height" class="form-label">Tinggi Badan (cm)</label>
+                <input type="number" class="form-control" id="height" name="height" step="0.1" required>
+            </div>
+            <div class="mb-3">
+                <label for="gender" class="form-label">Jenis Kelamin</label>
+                <select class="form-select" id="gender" name="gender" required>
+                    <option value="male">Laki-laki</option>
+                    <option value="female">Perempuan</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Hitung</button>
+        </form>
+    </div>
+
+    @if (session('success'))
+        <div class="alert alert-success mt-3">
+            {{ session('success') }}
+        </div>
+    @endif
+
     <footer class="bg-light text-center text-md-start py-4">
         <div class="container">
             <div class="row">
