@@ -336,7 +336,7 @@
 
         <div class="right-content">
             <div class="text">
-                <h1>Bulking Program</h1>
+                <h1>Cutting Program</h1>
                 <p> Bulking program is a great program for beginners. It is a 4-week program that will help you get started on your fitness journey. The program includes a mix of cardio and strength training exercises that will help you build muscle and burn fat. The program is designed to be challenging but achievable, so you can see results without feeling overwhelmed. </p>
             </div>
         </div>
@@ -409,7 +409,7 @@
     <div class="tips-content">
         
         <div class="head-content">
-            <h1>Tips and Trick about Bulking</h1>
+            <h1>Tips and Trick about Cutting</h1>
         </div>
         
         <div class="hl-divider" style="margin 200px"></div> 
@@ -565,7 +565,7 @@
     
     <div class="end-content">
         <div class="end-header">
-            <h1>Ready to Start Your Bulking Program?</h1>
+            <h1>Ready to Start Your Cutting Program?</h1>
         </div>
     </div>
     

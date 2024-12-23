@@ -16,7 +16,7 @@
         }
 
         body{
-            background: linear-gradient(#113826 5%,#A1A5A6 90%);
+            /* background: linear-gradient(#113826 5%,#A1A5A6 90%); */
         }
 
         .gap{
