@@ -6,12 +6,66 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
     <link rel="icon" href="/image/justLogo.png">
-
     <style>
-        *{
-            font-family: Roboto Slab;
+        * {
+            font-family: 'Roboto Slab', sans-serif;
+        }
+        body {
+            background-color: #f8f9fa; /* Light background for better contrast */
+        }
+        .navbar {
+            background-color: #113826;
+        }
+        .navbar a {
+            color: white !important;
+        }
+        .dropdown-menu {
+            background-color: #113826;
+        }
+        .dropdown-menu .dropdown-item {
+            color: white;
+        }
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #EB8E27;
+        }
+        h1 {
+            color: #113826;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-label {
+            color: #113826;
+        }
+        .form-control, .form-select {
+            border: 1px solid #113826;
+        }
+        .btn-primary {
+            background-color: #113826;
+            border-color: #113826;
+        }
+        .btn-primary:hover {
+            background-color: #EB8E27;
+            border-color: #EB8E27;
+        }
+        .alert-success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        footer {
+            background-color: #113826;
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -95,7 +149,7 @@
                 <div class="card-body">
                     <h5 class="card-title">About Us</h5>
                     <p class="card-text">Learn more about our mission to promote healthy and nutritious lifestyles.</p>
-                    <a href="{{ route('about') }}" class="btn me-2" style="background-color: #ed553b; color: white;">Read More</a>
+                    <a href="{{ route('about') }}" class="btn me-2" style="background-color: #113826; color: white;">Read More</a>
                 </div>
             </div>
         </div>
@@ -105,7 +159,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Nutritional Calculator</h5>
                     <p class="card-text">Calculate your daily nutritional needs to stay healthy and fit.</p>
-                    <a href="{{ route('program') }}" class="btn me-2" style="background-color: #ed553b; color: white;">Try It Out</a>
+                    <a href="{{ route('program') }}" class="btn me-2" style="background-color: #113826; color: white;">Try It Out</a>
                 </div>
             </div>
         </div>
@@ -115,37 +169,35 @@
                 <div class="card-body">
                     <h5 class="card-title">Diet Programs</h5>
                     <p class="card-text">Explore our diet programs designed for a variety of health goals.</p>
-                    <a href="{{ route('program') }}" class="btn me-2" style="background-color: #ed553b; color: white;">Explore Now</a>
+                    <a href="{{ route('program') }}" class="btn me-2" style="background-color: #113826; color: white;">Explore Now</a>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <footer class="bg-light text-center text-md-start py-4">
+    <footer class="text-center text-md-start py-4 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <h5 class="text-uppercase">Gizies</h5>
-                    <p class="text-muted">Your trusted source for health and nutrition tips, meal plans, and diet programs.</p>
+                    <p>Your trusted source for health and nutrition tips, meal plans, and diet programs.</p>
                 </div>
                 <div class="col-md-4 mb-3">
                     <h5 class="text-uppercase">Features</h5>
                     <ul class="list-unstyled">
-                        <li><a href="{{ route('home') }}" class="text-dark text-decoration-none">Home</a></li>
-                        <li><a href="{{ route('about') }}" class="text-dark text-decoration-none">About Us</a></li>
-                        <li><a href="{{ route('program') }}" class="text-dark text-decoration-none">Programs</a></li>
-                        <li><a href="{{ route('support') }}" class="text-dark text-decoration-none">Support</a></li>
-                        <li><a href="{{ route('calculator') }}" class="text-dark text-decoration-none">Tools</a></li>
+                        <li><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="{{ route('about') }}">About Us</a></li>
+                        <li><a href="{{ route('program') }}">Programs</a></li>
+                        <li><a href="{{ route('support') }}">Support</a></li>
+                        <li><a href="{{ route('calculator') }}">Tools</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">
                     <h5 class="text-uppercase">Follow Us</h5>
-                    <div>
-                        <a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-dark me-3"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
-                    </div>
+                    <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
             </div>
             <div class="text-center py-3">
