@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CalculatorController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
     return view('home');
@@ -26,6 +28,9 @@ Route::get('/about', function () {
 Route::get('/support', function () {
     return view('support');
 })->name('support');
+
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/register', [AuthController::class, 'register'])->name('register');
 
 Route::get('/calculator', [CalculatorController::class, 'index'])->name('calculator');
 Route::post('/calculator/calculate', [CalculatorController::class, 'calculate'])->name('calculate');
