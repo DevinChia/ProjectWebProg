@@ -32,30 +32,6 @@
         h1 {
             color: #113826;
         }
-        form {
-            background-color: #ffffff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .form-label {
-            color: #113826;
-        }
-        .form-control, .form-select {
-            border: 1px solid #113826;
-        }
-        .btn-primary {
-            background-color: #113826;
-            border-color: #113826;
-        }
-        .btn-primary:hover {
-            background-color: #EB8E27;
-            border-color: #EB8E27;
-        }
-        .alert-success {
-            background-color: #d4edda;
-            color: #155724;
-        }
         footer {
             background-color: #113826;
             color: white;
