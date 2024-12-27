@@ -105,7 +105,8 @@
                 </ul>
             </div>
         </div>
-    </nav>    
+    </nav>
+
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -145,39 +146,40 @@
         </button>
     </div>
     <div class="container my-5">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <img src="https://images.squarespace-cdn.com/content/v1/60b5ea9707b8d24913bd7fb7/1623655235294-0HH930PSUCW7PKGVKGYX/Nutrition+Talk+For+Corporate+Companies+Employee+Engagement.jpeg" class="card-img-top img-fluid" alt="..." style="object-fit: cover; height: 200px; width: 100%;">
-                <div class="card-body">
-                    <h5 class="card-title">About Us</h5>
-                    <p class="card-text">Learn more about our mission to promote healthy and nutritious lifestyles.</p>
-                    <a href="{{ route('about') }}" class="btn me-2" style="background-color: #113826; color: white;">Read More</a>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.squarespace-cdn.com/content/v1/60b5ea9707b8d24913bd7fb7/1623655235294-0HH930PSUCW7PKGVKGYX/Nutrition+Talk+For+Corporate+Companies+Employee+Engagement.jpeg" class="card-img-top img-fluid" alt="..." style="object-fit: cover; height: 200px; width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">About Us</h5>
+                        <p class="card-text">Learn more about our mission to promote healthy and nutritious lifestyles.</p>
+                        <a href="{{ route('about') }}" class="btn me-2" style="background-color: #113826; color: white;">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="https://img.freepik.com/premium-photo/controlling-diabetes-carbohydrate-counting-insulin-treatment-idea-concept-history-diabetes-health_206895-1230.jpg" class="card-img-top img-fluid" alt="..." style="object-fit: cover; height: 200px; width: 100%;">
-                <div class="card-body">
-                    <h5 class="card-title">Nutritional Calculator</h5>
-                    <p class="card-text">Calculate your daily nutritional needs to stay healthy and fit.</p>
-                    <a href="{{ route('program') }}" class="btn me-2" style="background-color: #113826; color: white;">Try It Out</a>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-photo/controlling-diabetes-carbohydrate-counting-insulin-treatment-idea-concept-history-diabetes-health_206895-1230.jpg" class="card-img-top img-fluid" alt="..." style="object-fit: cover; height: 200px; width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Nutritional Calculator</h5>
+                        <p class="card-text">Calculate your daily nutritional needs to stay healthy and fit.</p>
+                        <a href="{{ route('program') }}" class="btn me-2" style="background-color: #113826; color: white;">Try It Out</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="https://wallpapertag.com/wallpaper/full/c/5/9/143959-gym-wallpaper-1920x1200-for-iphone.jpg" class="card-img-top img-fluid" alt="..." style="object-fit: cover; height: 200px; width: 100%;">
-                <div class="card-body">
-                    <h5 class="card-title">Diet Programs</h5>
-                    <p class="card-text">Explore our diet programs designed for a variety of health goals.</p>
-                    <a href="{{ route('program') }}" class="btn me-2" style="background-color: #113826; color: white;">Explore Now</a>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://wallpapertag.com/wallpaper/full/c/5/9/143959-gym-wallpaper-1920x1200-for-iphone.jpg" class="card-img-top img-fluid" alt="..." style="object-fit: cover; height: 200px; width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Diet Programs</h5>
+                        <p class="card-text">Explore our diet programs designed for a variety of health goals.</p>
+                        <a href="{{ route('program') }}" class="btn me-2" style="background-color: #113826; color: white;">Explore Now</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    
     <footer class="text-center text-md-start py-4 mt-5">
         <div class="container">
             <div class="row">

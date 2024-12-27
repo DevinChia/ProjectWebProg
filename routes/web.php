@@ -5,7 +5,7 @@ use App\Http\Controllers\CalculatorController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('home');
 })->name('home');
 
@@ -29,8 +29,13 @@ Route::get('/support', function () {
     return view('support');
 })->name('support');
 
-Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/', [AuthController::class, 'login'])->name('login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 
 Route::get('/calculator', [CalculatorController::class, 'index'])->name('calculator');
 Route::post('/calculator/calculate', [CalculatorController::class, 'calculate'])->name('calculate');
+
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+Route::get('/admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.edit');
+Route::post('/admin/update/{id}', [AdminController::class, 'update'])->name('admin.update');
+Route::delete('/admin/delete/{id}', [AdminController::class, 'destroy'])->name('admin.delete');
