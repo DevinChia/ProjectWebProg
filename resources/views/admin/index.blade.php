@@ -112,12 +112,12 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Nama</th>
-                    <th>Umur</th>
-                    <th>Kalori</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Calories</th>
                     <th>BMI</th>
-                    <th>Dibuat</th>
-                    <th>Aksi</th>
+                    <th>Date</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
