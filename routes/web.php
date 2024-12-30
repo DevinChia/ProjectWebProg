@@ -29,37 +29,26 @@ Route::get('/support', function () {
     return view('support');
 })->name('support');
 
-Route::get('/support', function () {
-    return view('support');
-})->name('support');
+Route::get('/food1', function () {
+    return view('food1');
+})->name('food1');
 
-Route::get('/support', function () {
-    return view('support');
-})->name('support');
+Route::get('/food2', function () {
+    return view('food2');
+})->name('food2');
 
-Route::get('/support', function () {
-    return view('support');
-})->name('support');
+Route::get('/food3', function () {
+    return view('food3');
+})->name('food3');
 
-Route::get('/support', function () {
-    return view('support');
-})->name('support');
+Route::get('/food4', function () {
+    return view('food4');
+})->name('food4');
 
-Route::get('/support', function () {
-    return view('support');
-})->name('support');
+Route::get('/food5', function () {
+    return view('food5');
+})->name('food5');
 
-Route::get('/support', function () {
-    return view('support');
-})->name('support');
-
-Route::get('/support', function () {
-    return view('support');
-})->name('support');
-
-Route::get('/support', function () {
-    return view('support');
-})->name('support');
 
 Route::get('/', [AuthController::class, 'login'])->name('login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');

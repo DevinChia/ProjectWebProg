@@ -378,34 +378,39 @@
         <div class="hl-divider" ></div> <!-- Divider -->
         
         <div class="card-carousel">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;" href="{{ route('food1') }}" >
                 <img src="{{URL('image\Menu1.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">395 Calories</h5>
+                    <!-- <h5 style="" class="" >395 Calories</h5> -->
+                    <a class="nav-link" href="{{ route('food1') }}" style="color: dark;">395 Calories</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="{{URL('image\Menu2.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">374 Calories</h5>
+                    <!-- <h5 style="" class="">374 Calories</h5> -->
+                    <a class="nav-link" href="{{ route('food1') }}" style="color: dark;">374 Calories</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="{{URL('image\Menu3.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">207 Calories</h5>
+                    <!-- <h5 style="" class="">207 Calories</h5> -->
+                    <a class="nav-link" href="{{ route('food1') }}" style="color: dark;">207 Calories</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="{{URL('image\Menu4.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">403 Calories</h5>
+                    <!-- <h5 style="" class="">403 Calories</h5> -->
+                    <a class="nav-link" href="{{ route('food1') }}" style="color: dark;">403 Calories</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="{{URL('image\Menu5.jpg')}}" alt="" class="card-content">
                 <div class="text-card">
-                    <h5 style="" class="">500-700 kcal</h5>
+                    <!-- <h5 style="" class="">500-700 kcal</h5> -->
+                    <a class="nav-link" href="{{ route('food1') }}" style="color: dark;">500-700 Calories</a>
                 </div>
             </div>
         </div>
