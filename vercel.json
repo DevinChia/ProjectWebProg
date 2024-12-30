@@ -14,8 +14,8 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://yourproductionurl.com",
-        "APP_KEY": "base64:TGaVaXwhWgjn9akhE4SCSIjGG/cQqvICUQ+PgLA3Bs0=",
+        "APP_URL": "https://gizies.vercel.app/",
+        "APP_KEY": "base64:wafZ4VzYOxLqM2bWHpDxd0EL/4X9hBfa2kJd4okUFGA=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
@@ -30,6 +30,7 @@
         "DB_PORT": "10999",
         "DB_DATABASE": "defaultdb",
         "DB_USERNAME": "avnadmin",
+        "DB_PASSWORD": "AVNS_FqN47G8EJSHQYju2ITJ",
         "MYSQL_ATTR_SSL_CA": "/storage/certs/ca.pem"
     }
 }
