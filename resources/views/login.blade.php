@@ -72,7 +72,7 @@
                 </div>
                 <button type="submit" class="btn btn-green w-100">Login</button>
                 <div class="text-center mt-3">
-                    <p>Don't have an account? k<a href="{{ route('register') }}" class="text-primary">Register here</a></p>
+                    <p>Don't have an account? <a href="{{ route('register') }}" class="text-primary">Register here</a></p>
                 </div>
             </form>
 
