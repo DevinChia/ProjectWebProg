@@ -102,7 +102,7 @@
     </nav>
 
     <div class="container mt-5">
-        <h1 class="text-center">Kalkulator Kalori dan BMIu</h1>
+        <h1 class="text-center">Kalkulator Kalori dan BMI</h1>
         <form action="{{ route('calculate') }}" method="POST" class="mt-4">
             @csrf
             <div class="mb-3">
