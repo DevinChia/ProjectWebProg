@@ -10,7 +10,7 @@
     <link rel="icon" href="/image/justLogo.png">
     <style>
         *{
-            font-family: Roboto Slab;
+            font-family: 'Roboto Slab', sans-serif;
             margin: 0; 
             padding: 0;
         }

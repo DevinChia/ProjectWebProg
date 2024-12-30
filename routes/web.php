@@ -29,6 +29,22 @@ Route::get('/support', function () {
     return view('support');
 })->name('support');
 
+Route::get('/support', function () {
+    return view('support');
+})->name('support');
+
+Route::get('/support', function () {
+    return view('support');
+})->name('support');
+
+Route::get('/support', function () {
+    return view('support');
+})->name('support');
+
+Route::get('/support', function () {
+    return view('support');
+})->name('support');
+
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 

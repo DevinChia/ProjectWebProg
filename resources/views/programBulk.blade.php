@@ -10,7 +10,7 @@
     <link rel="icon" href="/image/justLogo.png">
     <style>
         *{
-            font-family: Roboto Slab;
+            font-family: 'Roboto Slab', sans-serif;
             margin: 0; 
             padding: 0;
         }
@@ -266,9 +266,8 @@
         
         .accordion-header button{
             font-size: 1.2vw;
-            /* background-color: rgba(0, 70, 37, 0.75); */
         }
-
+        
         .accordion-body{
             text-align: left;
         }
@@ -544,6 +543,10 @@
     
     <div class="hl" style="margin: 0px"></div> <!-- Divider -->
 
+    <div class="head-content">
+        <h1></h1>
+    </div>
+    <!-- <div class="hl" style="margin: 0px"></div> Divider -->
     <div class="end-content">
         <div class="head-content">
             <h1>Ready to Start Your Bulking Program?</h1>

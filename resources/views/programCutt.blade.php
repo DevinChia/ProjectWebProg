@@ -10,7 +10,7 @@
     <link rel="icon" href="/image/justLogo.png">
     <style>
         *{
-            font-family: Roboto Slab;
+            font-family: 'Roboto Slab', sans-serif;
             margin: 0; 
             padding: 0;
         }
@@ -219,12 +219,13 @@
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             text-align: center;
-        }
 
+        }
+        
         .card:hover .text-card{
             opacity: 1;
         }
-
+        
         .card:hover .card-content{
             transition-duration: 0.5s;
             opacity: 0.5;
@@ -549,29 +550,6 @@
 </div>
     
     <div class="hl" style="margin: 0px"></div> <!-- Divider -->
-
-    
-    <!-- <section class="mb-5">
-        <h2 class="h3 text-center">Why GIZIES is Unique</h2>
-        <p class="text-center">At GIZIES, we stand apart by combining cutting-edge nutritional science with personalized, practical solutions for every lifestyle. Our holistic approach to health and wellness, backed by expert advice and premium products, ensures that you are always supported in your journey to a healthier life.</p>
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <i class="bi bi-person-check" style="font-size: 50px; color: #4CAF50;"></i>
-                <h5>Expert-Led Advice</h5>
-                <p>Our team of nutritionists and fitness experts provide personalized, science-backed recommendations.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <i class="bi bi-box-seam" style="font-size: 50px; color: #4CAF50;"></i>
-                <h5>High-Quality Products</h5>
-                <p>We only offer top-tier, carefully selected supplements and products to enhance your health.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <i class="bi bi-egg-fried" style="font-size: 50px; color: #4CAF50;"></i>
-                <h5>Tailored Meal Plans</h5>
-                <p>Receive customized meal plans that fit your specific health goals, preferences, and lifestyle.</p>
-            </div>
-        </div>
-    </section> -->
     
     <div class="end-content">
         <div class="end-header">
