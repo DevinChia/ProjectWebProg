@@ -39,3 +39,31 @@ Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::get('/admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.edit');
 Route::post('/admin/update/{id}', [AdminController::class, 'update'])->name('admin.update');
 Route::delete('/admin/delete/{id}', [AdminController::class, 'destroy'])->name('admin.delete');
+
+Route::get('/fiberDetails', function () {
+    return view('fiberDetails');
+})->name('fiberDetails');
+
+Route::get('/antioxidantsDetails', function () {
+    return view('antioxidantsDetails');
+})->name('antioxidantsDetails');
+
+Route::get('/fatsDetails', function () {
+    return view('fatsDetails');
+})->name('fatsDetails');
+
+Route::get('/boostsDetails', function () {
+    return view('boostsDetails');
+})->name('boostsDetails');
+
+Route::get('/balancesDetails', function () {
+    return view('balancesDetails');
+})->name('balancesDetails');
+
+Route::get('/workoutsDetails', function () {
+    return view('workoutsDetails');
+})->name('workoutsDetails');
+
+Route::get('/news', function () {
+    return view('news');
+})->name('news');

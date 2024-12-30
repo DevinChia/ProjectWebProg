@@ -10,9 +10,7 @@
     <link rel="icon" href="/image/justLogo.png">
     <style>
         *{
-            font-family: Roboto Slab;
-            margin: 0; 
-            padding: 0;
+            font-family: 'Roboto Slab', sans-serif;
         }
 
         body{
@@ -310,7 +308,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('program') }}" style="color: white;">Programs</a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('news') }}" style="color: white;">News</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                             Tools
@@ -320,6 +320,9 @@
                                 <a class="dropdown-item" href="{{ route('calculator') }}" style="color: white;" onmouseover="this.style.backgroundColor='#EB8E27'" onmouseout="this.style.backgroundColor='transparent'">Calculator</a>
                             </li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('login') }}" style="color: white;">Login</a>
                     </li>
                 </ul>
             </div>
@@ -591,7 +594,7 @@
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><a href="{{ route('about') }}">About Us</a></li>
                         <li><a href="{{ route('program') }}">Programs</a></li>
-                        <li><a href="{{ route('support') }}">Support</a></li>
+                        <li><a href="{{ route('news') }}">News</a></li>
                         <li><a href="{{ route('calculator') }}">Tools</a></li>
                     </ul>
                 </div>
