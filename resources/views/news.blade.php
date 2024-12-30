@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="icon" href="/image/justLogo.png">
     <style>
         * {
             font-family: 'Roboto Slab', sans-serif;
@@ -43,6 +42,31 @@
         }
         .form-control, .form-select {
             border: 1px solid #113826;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            height: 100%;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top {
+            height: 180px;
+            object-fit: cover; /* Ensures uniform scaling for images */
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #113826;
+        }
+        .card-text {
+            color: #555;
+            font-size: 0.9rem;
         }
         .btn-primary {
             background-color: #113826;
@@ -108,86 +132,70 @@
             </div>
         </div>
     </nav>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner" style="max-height: 800px;">
-            <div class="carousel-item active">
-                <img src="https://cdn.healthnwell.com/healthnwell/wp-content/uploads/2018/04/7289d667-3d94-4da4-9a18-29fdbedbad15.jpg" class="d-block w-100" alt="Rich in Fiber" style="object-fit: cover; max-height: 400px;">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="font-size: 1.5rem;">
-                    <h5 style="font-size: 2rem;">Rich in Fiber</h5>
-                    <p>High fiber content promotes digestive health and supports a balanced diet.</p>
-                    <a href="{{ route('fiberDetails') }}" class="btn btn-primary" style="background-color: #113826; border: none;">Read More</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://wallpaperaccess.com/full/1189666.jpg" class="d-block w-100" alt="Loaded with Antioxidants" style="object-fit: cover; max-height: 400px;">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="font-size: 1.5rem;">
-                    <h5 style="font-size: 2rem;">Loaded with Antioxidants</h5>
-                    <p>Packed with antioxidants to fight free radicals and keep your body healthy.</p>
-                    <a href="{{ route('antioxidantsDetails') }}" class="btn btn-primary" style="background-color: #113826; border: none;">Read More</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://i.pinimg.com/originals/ad/d7/21/add721a7e63ed7f93765f805fafa4d85.jpg" class="d-block w-100" alt="Source of Healthy Fats" style="object-fit: cover; max-height: 400px;">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="font-size: 1.5rem;">
-                    <h5 style="font-size: 2rem;">Source of Healthy Fats</h5>
-                    <p>Contains essential healthy fats that support heart health and overall well-being.</p>
-                    <a href="{{ route('fatsDetails') }}" class="btn btn-primary" style="background-color: #113826; border: none;">Read More</a>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
     <div class="container my-5">
+        <h1 class="mb-4 text-center">Latest Nutrition News</h1>
         <div class="row">
-            <div class="col-md-4 d-flex">
+            <!-- Fiber News -->
+            <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://images.squarespace-cdn.com/content/v1/60b5ea9707b8d24913bd7fb7/1623655235294-0HH930PSUCW7PKGVKGYX/Nutrition+Talk+For+Corporate+Companies+Employee+Engagement.jpeg" 
-                         class="card-img-top img-fluid" 
-                         alt="..." 
-                         style="object-fit: cover; height: 200px; width: 100%;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">About Us</h5>
-                        <p class="card-text">Learn more about our mission to promote healthy and nutritious lifestyles.</p>
-                        <a href="{{ route('about') }}" class="btn mt-auto" style="background-color: #113826; color: white;">Read More</a>
+                    <img src="https://cdn.healthnwell.com/healthnwell/wp-content/uploads/2018/04/7289d667-3d94-4da4-9a18-29fdbedbad15.jpg" class="card-img-top" alt="Fiber News">
+                    <div class="card-body">
+                        <h5 class="card-title">Fiber: The Unsung Hero of Nutrition</h5>
+                        <p class="card-text">Discover the importance of fiber for your digestive and overall health.</p>
+                        <a href="{{ route('fiberDetails') }}" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 d-flex">
+            <!-- Antioxidants News -->
+            <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://img.freepik.com/premium-photo/controlling-diabetes-carbohydrate-counting-insulin-treatment-idea-concept-history-diabetes-health_206895-1230.jpg" 
-                         class="card-img-top img-fluid" 
-                         alt="..." 
-                         style="object-fit: cover; height: 200px; width: 100%;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Nutritional Calculator</h5>
-                        <p class="card-text">Calculate your daily nutritional needs to stay healthy and fit.</p>
-                        <a href="{{ route('calculator') }}" class="btn mt-auto" style="background-color: #113826; color: white;">Try It Out</a>
+                    <img src="https://wallpaperaccess.com/full/1189666.jpg" class="card-img-top" alt="Antioxidants News">
+                    <div class="card-body">
+                        <h5 class="card-title">Antioxidants: Fighting Free Radicals</h5>
+                        <p class="card-text">Learn how antioxidants protect your cells from damage and promote health.</p>
+                        <a href="{{ route('antioxidantsDetails') }}" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 d-flex">
+            <!-- Fats News -->
+            <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://wallpapertag.com/wallpaper/full/c/5/9/143959-gym-wallpaper-1920x1200-for-iphone.jpg" 
-                         class="card-img-top img-fluid" 
-                         alt="..." 
-                         style="object-fit: cover; height: 200px; width: 100%;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Diet Programs</h5>
-                        <p class="card-text">Explore our diet programs designed for a variety of health goals.</p>
-                        <a href="{{ route('program') }}" class="btn mt-auto" style="background-color: #113826; color: white;">Explore Now</a>
+                    <img src="https://i.pinimg.com/originals/ad/d7/21/add721a7e63ed7f93765f805fafa4d85.jpg" class="card-img-top" alt="Fats News">
+                    <div class="card-body">
+                        <h5 class="card-title">Healthy Fats: A Nutritional Necessity</h5>
+                        <p class="card-text">Explore the role of healthy fats in supporting brain and heart health.</p>
+                        <a href="{{ route('fatsDetails') }}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Generic Article Example -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://th.bing.com/th/id/OIP.BBx91qHXEnfLLvX9y-_YfgHaE8?w=639&h=426&rs=1&pid=ImgDetMain" class="card-img-top" alt="General Nutrition News">
+                    <div class="card-body">
+                        <h5 class="card-title">The Impact of a Balanced Diet</h5>
+                        <p class="card-text">Discover how maintaining a balanced diet improves energy and immunity.</p>
+                        <a href="{{ route('balancesDetails') }}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://static.toiimg.com/photo/93254064.cms" class="card-img-top" alt="General Nutrition News">
+                    <div class="card-body">
+                        <h5 class="card-title">Boosting Immunity with Fruits</h5>
+                        <p class="card-text">Find out which fruits can help strengthen your immune system.</p>
+                        <a href="{{ route('boostsDetails') }}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://th.bing.com/th/id/R.770951e9ba3a7c8f064445697b388a41?rik=FRKQPUANsFA4wQ&riu=http%3a%2f%2fartimg.gympik.com%2farticles%2fwp-content%2fuploads%2f2018%2f08%2fshutterstock_1114851971.jpg&ehk=wwuPuqbd7gNOEiJl0WJr3gVQyIZh15BGR8z%2f6ox0zlY%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="General Nutrition News">
+                    <div class="card-body">
+                        <h5 class="card-title">Being Healthy By Working Out</h5>
+                        <p class="card-text">As a healthy body keeps a healthy life and find out what kind of workout that can help us.</p>
+                        <a href="{{ route('workoutsDetails') }}" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>

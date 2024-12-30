@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Admin - View Data</title>
     <link rel="icon" href="/image/justLogo.png">
     <style>
         * {
             font-family: 'Roboto Slab', sans-serif;
         }
         body {
-            background-color: #f8f9fa;
+            background-color: #f8f9fa; /* Light background for better contrast */
         }
         .navbar {
             background-color: #113826;
@@ -70,27 +69,33 @@
     </style>
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-expand-lg" style="background-color:#113826">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('home') }}">
-                <img src="{{URL('image/logo.png')}}" alt="Logo" style="max-width: 120px;">
-            </a>
+            <a class="navbar-brand" href="{{ route('home') }}" style="color: white;"> <img src="{{URL('image/logo.png')}}" alt="" style="max-width: 120px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto me-3" style="font-size: 1.2rem;">
-                    <li class="nav-item"><a class="nav-link active" href="{{ route('home') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('program') }}">Programs</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('news') }}" style="color: white;">News</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('home') }}" style="color: white;">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('about') }}" style="color: white;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('program') }}" style="color: white;">Programs</a>
+                    </li>
+                    
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{ route('calculator') }}">Calculator</a></li>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Tools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #113826;">
+                            <li>
+                                <a class="dropdown-item" href="{{ route('calculator') }}" style="color: white" onmouseover="this.style.backgroundColor='#EB8E27'" onmouseout="this.style.backgroundColor='transparent'">Calculator</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -102,41 +107,30 @@
     </nav>
 
     <div class="container mt-5">
-        <h1 class="text-center">Kalkulator Kalori dan BMI</h1>
-        <form action="{{ route('calculate') }}" method="POST" class="mt-4">
+        <h1 class="text-center">Edit Data</h1>
+        <form action="{{ route('admin.update', $data->id) }}" method="POST">
             @csrf
             <div class="mb-3">
                 <label for="name" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+                <input type="text" name="name" class="form-control" value="{{ $data->name }}" required>
             </div>
             <div class="mb-3">
                 <label for="age" class="form-label">Umur</label>
-                <input type="number" class="form-control" id="age" name="age" required>
+                <input type="number" name="age" class="form-control" value="{{ $data->age }}" required>
             </div>
             <div class="mb-3">
-                <label for="weight" class="form-label">Berat Badan (kg)</label>
-                <input type="number" class="form-control" id="weight" name="weight" step="10" required>
+                <label for="calories" class="form-label">Kalori</label>
+                <input type="number" name="calories" class="form-control" value="{{ $data->calories }}" required>
             </div>
             <div class="mb-3">
-                <label for="height" class="form-label">Tinggi Badan (cm)</label>
-                <input type="number" class="form-control" id="height" name="height" step="10" required>
+                <label for="bmi" class="form-label">BMI</label>
+                <input type="number" name="bmi" class="form-control" value="{{ $data->bmi }}" required>
             </div>
-            <div class="mb-3">
-                <label for="gender" class="form-label">Jenis Kelamin</label>
-                <select class="form-select" id="gender" name="gender" required>
-                    <option value="male">Laki-laki</option>
-                    <option value="female">Perempuan</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Hitung</button>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+            <a href="{{ route('admin') }}" class="btn btn-secondary">Kembali</a>
         </form>
-
-        @if (session('success'))
-            <div class="alert alert-success mt-4">
-                {{ session('success') }}
-            </div>
-        @endif
     </div>
+
     <footer class="text-center text-md-start py-4 mt-5">
         <div class="container">
             <div class="row">
@@ -150,7 +144,7 @@
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><a href="{{ route('about') }}">About Us</a></li>
                         <li><a href="{{ route('program') }}">Programs</a></li>
-                        <li><a href="{{ route('news') }}">News</a></li>
+                        <li><a href="{{ route('support') }}">Support</a></li>
                         <li><a href="{{ route('calculator') }}">Tools</a></li>
                     </ul>
                 </div>
