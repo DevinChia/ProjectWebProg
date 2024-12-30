@@ -49,6 +49,10 @@
                 alert('User login successful!');
                 window.location.href = "{{ route('home') }}";
             }
+            else{
+                alert('Admin login successful!');
+                window.location.href = "{{ route('admin') }}";
+            }
         }
     </script>
 </head>
