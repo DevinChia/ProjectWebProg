@@ -144,7 +144,7 @@
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><a href="{{ route('about') }}">About Us</a></li>
                         <li><a href="{{ route('program') }}">Programs</a></li>
-                        <li><a href="{{ route('support') }}">Support</a></li>
+                        <li><a href="{{ route('news') }}">News</a></li>
                         <li><a href="{{ route('calculator') }}">Tools</a></li>
                     </ul>
                 </div>

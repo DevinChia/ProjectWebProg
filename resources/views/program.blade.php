@@ -215,7 +215,6 @@
             <h1 style="" class="DietText">Diet Program</h1>
         </div>
     </div>
-    
 
     <div class="container-body">
         <div class="card text-center">
@@ -271,6 +270,7 @@
             </div>
         </div>
     </div>
+    
     <footer class="text-center text-md-start py-4 mt-5">
         <div class="container">
             <div class="row">
