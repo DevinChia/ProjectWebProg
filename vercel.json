@@ -29,6 +29,7 @@
         "DB_HOST": "database-gizies-projectwebprog.e.aivencloud.com",
         "DB_PORT": "10999",
         "DB_DATABASE": "defaultdb",
-        "DB_USERNAME": "avnadmin"
+        "DB_USERNAME": "avnadmin",
+        "MYSQL_ATTR_SSL_CA": "/storage/certs/ca.pem"
     }
 }
